@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>D3JS</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/master.css" type="text/css">
+        <script src="./scripts/d3.v7.min.js"></script>
+        <script src="../assets/js/initVoitureClient.js" type="module"></script>
+    </head>
+
+    <body>
+        <a href="/">home</a>
+        <h1>Visualisation des données des voitures des clients</h1>
+        <div id="main">
+            <progress-bar id="progress-bar-client"></progress-bar>
+            <div id="chart"></div>
+
+            <self-legend id="legend"></self-legend>
+            <div id="selecteur">
+                <p>Sélectionnez un attribut de véhicule :</p>
+                <select name="champs" id="champs">
+                    <option value="marque">Marque</option>
+                    <option value="nom">Nom</option>
+                    <option value="puissance">Puissance</option>
+                    <option value="nbPlaces">Nombre de Places</option>
+                    <option value="nbPortes">Nombre de Portes</option>
+                    <option value="couleur">Couleur</option>
+                    <option value="occasion">Occasion</option>
+                </select>
+            </div>
+        </div>
+    </body>
+</html>

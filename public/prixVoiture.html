@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>D3JS</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/master.css" type="text/css">
+        <script src="./scripts/d3.v7.min.js"></script>
+        <script src="../assets/js/initRapportPrix.js" type="module"></script>
+
+    </head>
+
+    <body>
+        <a href="/">home</a>
+        <h1>Rapport entre le prix d'une voiture neuve et d'une voiture d'occasion dans le Catalogue</h1>
+        <div id="main">
+            <div>
+                <select name="marque" id="marque"></select>
+                <select name="nom" id="nom"></select>
+                <button id="filterButton">Filtrer</button>
+            </div>
+            <div style="display:flex;">
+            <div id="chart"></div>
+            <form action="" id="form-informations">
+                <p>Cliquez sur un point pour visualiser ses informations</p>
+                <div class="champs form-group">
+                    <label for="form-marque">Marque</label>
+                    <div class="form-control" id="form-marque" type="text"></div>
+                </div>
+                <div class="champs form-group">
+                    <label for="form-nom">Nom</label>
+                    <div class="form-control" id="form-nom" type="text"></div>
+                </div>
+                <div class="champs form-group">
+                    <label for="prix-neuve">Prix Neuve</label>
+                    <div class="form-control" id="prix-neuve" type="text"></div>
+                </div>
+                <div class="champs form-group">
+                    <label for="prix-occasion">Prix Occasion</label>
+                    <div class="form-control" id="prix-occasion" type="text"></div>
+                </div>
+                <div class="champs form-group">
+                    <label for="form-puissance">Puissance</label>
+                    <div class="form-control" id="form-puissance" type="text"></div>
+                </div>
+                <div class="champs form-group">
+                    <label for="nb-place">Nombre de Places</label>
+                    <div class="form-control" id="nb-place" type="text"></div>
+                </div>
+                <div class="champs form-group">
+                    <label for="nb-porte">Nombre de Portes</label>
+                    <div class="form-control" id="nb-porte" type="text"></div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

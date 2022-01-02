@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>D3JS</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/master.css" type="text/css">
+        <script src="./scripts/d3.v7.min.js"></script>
+        <script src="../assets/js/initClient.js" type="module"></script>
+
+        <style>
+            #selecteur {
+                display: flex;
+                align-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                margin-top: 50px;
+                padding: 1em;
+            }
+
+            #main {
+                flex-direction: column;
+            }
+
+            #midd-container {
+                display: flex;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="/">home</a>
+        <h1>Visualisation des données des clients</h1>
+        <div id="main">
+            <progress-bar id="progress-bar"></progress-bar>
+            <div id="midd-container">
+                <div id="chart"></div>
+
+                <self-legend id="legend"></self-legend>
+                <div id="selecteur">
+                    <p>Sélectionnez un attribut pour constater la répartition des clients en fonction de cet attribut :</p>
+                    <select name="champs" id="champs">
+                        <option value="sexe">Sexe</option>
+                        <option value="situationFamiliale">Situation Familiale</option>
+                        <option value="nbEnfantsAcharge">Nombre Enfants à Charge</option>
+                        <option value="2eme voiture">2ème voiture</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

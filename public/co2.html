@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>D3JS</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/master.css" type="text/css">
+        <script src="./scripts/d3.v7.min.js"></script>
+        <script src="../assets/js/initCo2.js" type="module"></script>
+        <style>
+            #main {
+                display: flex;
+                flex-direction: row;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="/">home</a>
+        <h1>Rapport entre le rejet en CO2 des véhicules par rapport à leur coût energétique</h1>
+        <div id="main">
+            <div id="chart"></div>
+
+            <self-legend id="legend"></self-legend>
+
+            <form action="" id="form-informations">
+                <p>Cliquez sur un point pour visualiser ses informations</p>
+                <div class="champs form-group">
+                    <label for="marque-modele">Marque / Modèle</label>
+                    <div class="form-control" id="marque-modele" type="text"></div>
+                </div>
+                <div class="champs form-group">
+                    <label for="bonus-malus">Bonus / Malus</label>
+                    <div class="form-control" id="bonus-malus" type="text"></div>
+                </div>
+                <div class="champs form-group">
+                    <label for="rejet-co2">Rejet Co2 g/km</label>
+                    <div class="form-control" id="rejet-co2" type="text"></div>
+                </div>
+                <div class="champs form-group">
+                    <label for="cout-energie">Coût Energétique</label>
+                    <div class="form-control" id="cout-energie" type="text"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

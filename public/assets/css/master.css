@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    background-color: rgb(0,0,0);
+    color: ivory;
+}
+
+h1 {
+    color: ivory;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#form-informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 20%;
+}
+
+.champs {
+    padding: 1em;
+    width: 100%;
+}
+
+#d3-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}

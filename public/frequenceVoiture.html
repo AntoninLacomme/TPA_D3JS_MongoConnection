@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>D3JS</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/master.css" type="text/css">
+        <script src="./scripts/d3.v7.min.js"></script>
+        <script src="../assets/js/initFqVoitures.js" type="module"></script>
+    </head>
+
+    <body>
+        <a href="/">home</a>
+        <h1>Visualisation des véhicules</h1>
+        <div id="main">
+            <progress-bar id="progress-bar"></progress-bar>
+            <div id="d3-container">
+                <div id="chart"></div>
+                <div id="legende">
+                    <controller-fqcars></controller-fqcars>
+                    <self-legend id="legend"></self-legend>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
